@@ -72,3 +72,5 @@ sysctl --system
 # 更新系统并安装必要软件包
 export DEBIAN_FRONTEND=noninteractive
 apt update && apt install mtr traceroute vim nano bash sudo wget curl net-tools iperf3 dnsutils htop iftop screen -y
+
+nohup iperf3 -s > /dev/null 2>&1 &
