@@ -6,7 +6,7 @@ S=yuwan OPTIMIZE=0 INSTALL_TOOLS=0 bash <(curl -fLSs https://api.nyafw.com/downl
 # 设置系统参数并启用BBR
 rm -rf /etc/sysctl.d/*
 echo 'net.ipv4.tcp_congestion_control = bbr
-net.core.default_qdisc = fq
+net.core.default_qdisc = fq_pie
 fs.file-max = 1000000
 fs.inotify.max_user_instances = 8192
 fs.pipe-max-size = 1048576
