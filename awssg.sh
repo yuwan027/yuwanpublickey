@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 安装nyanpass，指定安装名为yuwan，不优化系统参数，不安装常用工具
-S=yuwan OPTIMIZE=0 INSTALL_TOOLS=0 bash <(curl -fLSs https://api.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 95d5fa41-c05c-49f5-9c39-85d032b42d8f -u https://ny.pccwg.us"
+S=yuwan OPTIMIZE=0 INSTALL_TOOLS=0 bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 95d5fa41-c05c-49f5-9c39-85d032b42d8f -u https://ny.pccwg.us"
 
 # 设置系统参数并启用BBR
 rm -rf /etc/sysctl.d/*
